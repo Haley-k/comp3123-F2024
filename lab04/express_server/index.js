@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const SERVER_PORT = 3000
+const SERVER_PORT = 3000;
 
 app.get('/', (req, res) => {
     res.send('<h1>Hello World</h1>');
@@ -17,12 +17,12 @@ app.get('/contact', (req, res) => {
 app.get('/hello', (req, res) => {
     res.status(200)
     res.send('<h1>GET - Hello World</h1>');
-})
+});
 
 app.post('/hello', (req, res) => {
     res.status(201)
         .send('<h1>POST - Hello World</h1>');
-})
+});
 
 // app.all('/hello', (req, res) => {
 //     res.status(200)
@@ -32,12 +32,12 @@ app.post('/hello', (req, res) => {
 app.put('/hello', (req, res) => {
     res.status(203)
     res.send('<h1>PUT - Hello World</h1>');
-})
+});
 
 app.delete('/hello', (req, res) => {
     res.status(204)
     res.send('<h1>DELETE - Hello World</h1>');
-})
+});
 
 app.get('/student', (req, res) => {
     res.status(200)
