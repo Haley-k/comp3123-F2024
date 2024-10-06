@@ -10,8 +10,11 @@ connectDB();
 
 app.use(express.json());
 
-app.use('/api/v1/user', require('./routes/userRoutes'));
-app.use('/api/v1/emp', require('./routes/empRoutes'));
+const userRouter = require('./routes/userRoutes');
+const empRouter = require('./routes/empRoutes');
+
+app.use('/api/v1/user', userRouter);
+app.use('/api/v1/emp', empRouter);
 
 
 app.listen(SERVER_PORT, () => {
