@@ -31,6 +31,9 @@ app.use(express.json());
 // Test endpoint to check database connection
 app.get('/api/v1/test-db', async (req, res) => {
   try {
+    if (mongoose.connection.readyState !== 1) {
+      throw new Error('MongoDB is not connected');
+    }
     await mongoose.connection.db.admin().ping();
     res.status(200).send('Database connection is successful');
   } catch (error) {
