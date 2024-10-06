@@ -14,6 +14,8 @@ app.use('/api/v1/user', require('./routes/userRoutes'));
 app.use('/api/v1/emp', require('./routes/empRoutes'));
 
 
-// app.listen(SERVER_PORT, () => {
-//   console.log(`Server is running on port ${SERVER_PORT}`);
-// });
+app.listen(SERVER_PORT, () => {
+  console.log(`Server is running on port ${SERVER_PORT}`);
+});
+
+module.exports = app;
