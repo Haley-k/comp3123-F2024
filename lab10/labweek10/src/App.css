@@ -1,0 +1,90 @@
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 2px solid green;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  flex: 1;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group-inline {
+  align-self: start;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.form-group-inline input[type="checkbox"] {
+
+  margin: 0;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input, select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.submit-btn:hover {
+  background-color: darkgreen;
+}
+
+.submitted-data {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+
+.submitted-data p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.submitted-data strong {
+  color: green;
+}
+
+.submitted-data span {
+  color: black;
+}
